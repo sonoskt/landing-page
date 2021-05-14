@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #EEEEEE;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 1.5rem;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 65px;
+    width: 100%;
+    background-color: #EEEEEE;
+    position: fixed;
+    align-items: center;
+}
+
+.navbar i {
+    padding-left: 40px;
+    padding-right: 10px;
+}
+
+.navbar span {
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 350px;
+    width: 100%;
+}
+
+.welcome form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    font-size: 28px;
+    padding-bottom: 10px;
+}
+
+.welcome form {
+    width: 300px;
+}
+
+.welcome input {
+    margin-top: 14px;
+    margin-bottom: 12px;
+    padding: 5px 4px;
+    width: 100%;
+    max-width: 270px;
+    border-radius: 5%;
+}
+
+.welcome button {
+    font-weight: bolder;
+    font-size: 16px;
+    margin-bottom: 100px;
+}
+
+.btn {
+    padding: 8px 20px 8px 20px;
+    background-color: #F1C40F;
+}
+
+.btn:hover {
+    background-color: #ffce08;
+}
+
+#Features {
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+    justify-items: center;
+    justify-content: center;
+    grid-row-gap: 80px;
+}  
+
+#Features section {
+    display: grid;
+    grid-template-columns: 100px 800px;
+    justify-items: center;
+    grid-gap: 40px;
+}
+
+#Demo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin: 60px auto;
+}
+
+#Pricing {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#Pricing ul {
+    list-style: none;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    border: solid;
+    min-width: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-width: 1px;
+}
+
+.card div {
+    background-color: #DDDDDD;
+    width: 100%;
+    margin-top: 0px;
+    padding: 15px 0px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 2rem; 
+}
+
+.card h2 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.card li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.card button {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 65px;
+    width: 100%;
+    align-items: center;
+    background-color: #cccccc;
+    margin-top: 50px;
+
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    background-color: #cccccc;
+}
+
+footer li {
+    background-color: #cccccc;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+footer span {
+    background-color: #cccccc;
+}
+
+@media(max-width: 500px) {
+    .welcome {
+        height: 400px;
+    }
+
+    .welcome h1 {
+        text-align: center;
+        line-height: 40px;
+    }
+
+    footer {
+        flex-direction: column;
+        height: 50px;
+        text-align: center;
+    }
+
+    .navbar header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar span {
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+@media(max-width: 767px) {
+    iframe {
+        max-width: 350px;
+        max-height: 350px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .navbar a {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #Features section {
+        display: grid;
+        grid-template-columns: auto ;
+        text-align: center;
+        justify-content: space-around;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    #Pricing {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 300px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
